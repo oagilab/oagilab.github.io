@@ -1,0 +1,39 @@
+# robots.txt for AI for Healthcare
+# Allow major search engines, block AI data crawlers
+
+User-agent: *
+Disallow:
+
+# --- AI crawler restrictions ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+# --- Sitemap for search engines ---
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
