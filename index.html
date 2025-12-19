@@ -416,6 +416,109 @@
     form button:hover {
       background: #00b44f;
     }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        height: auto;
+        padding: 40px 20px;
+        background-attachment: scroll;
+      }
+
+      header img {
+        width: 80px;
+        height: 80px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p.tagline {
+        font-size: 1rem;
+      }
+
+      .button {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .about-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .social-links {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .social-link {
+        width: 40px;
+        height: 40px;
+      }
+
+      .social-link svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      footer {
+        padding: 20px 15px;
+      }
+
+      .capability-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+      }
+
+      .capability-icon svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .project svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      header {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      .projects {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .about-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
   </style>
 </head>
 
